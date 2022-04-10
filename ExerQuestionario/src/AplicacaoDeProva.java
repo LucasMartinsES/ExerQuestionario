@@ -1,3 +1,3 @@
-public class AplicacaoDeProva extends Question {
+public class AplicacaoDeProva {
     
 }
