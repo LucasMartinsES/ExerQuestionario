@@ -16,7 +16,7 @@ public class App
         ChoiceQuestion second = new ChoiceQuestion();
         second.setText("In which country was the inventor of Java born?");
         second.addChoice("Australia", false);
-        second.addChoice("Canada", true);
+        second.addChoice("canada", true);
         second.addChoice("Denmark", false);
         second.addChoice("United States", false);
 
@@ -27,21 +27,29 @@ public class App
 
         //1,5pts
         ChoiceQuestion fourth = new ChoiceQuestion();
-        fourth.setText("null");
-        fourth.addChoice("null", false);
-        fourth.addChoice("null", false);
-        fourth.addChoice("null", false);
-        fourth.addChoice("null", true);
+        fourth.setText("Which of these data types is most commonly used in Java?");
+        fourth.addChoice("Double, toString, if/else", false);
+        fourth.addChoice("Int, Float, Protected", false);
+        fourth.addChoice("Char,Boolean, Void", false);
+        fourth.addChoice("Double, Int, Boolean", true);
 
+        //2pts  
         Question fifth = new Question();
-        fifth.setText("null");
-        fifth.setAnswer("null");
+        fifth.setText("What is the access modifier you should avoid using");
+        fifth.setAnswer("Protected");
+
+        //1pts
+        Question sixth = new Question();
+        fifth.setText("Which of these can generate a loop: 1.float 2.toString 3.Scanner 4.do-while 5.char");
+        fifth.setAnswer("4");
+
 
         presentQuestion(first);
         presentQuestion(second);
         presentQuestion(third);
         presentQuestion(fourth);
         presentQuestion(fifth);
+        presentQuestion(sixth);
     }
 
     /**
